@@ -2,9 +2,9 @@
     <h3 class="page-title" data-bind="text: title"></h3>
     <div class="button-bar">
         <button class="btn btn-info"
-            data-bind="click: goBack"><i class="icon-hand-left"></i> Back</button>
+                data-bind="click: goBack"><i class="icon-hand-left"></i> Back</button>
         <button class="btn btn-info"
-            data-bind="click: cancel, enable: canSave"><i class="icon-undo"></i> Cancel</button>
+                data-bind="click: cancel, enable: canSave"><i class="icon-undo"></i> Cancel</button>
         <button class="btn btn-info"
                 data-bind="click: save, enable: canSave"><i class="icon-save"></i> Save</button>
         <button class="btn btn-danger"
@@ -13,6 +13,8 @@
         </button>
         <i class="icon-asterisk" data-bind="visible: hasChanges"></i>
     </div>
+    <!--<div data-bind="dump: $data, enable: false"></div>-->
+    <div data-bind="dump: session"></div>
     <div data-bind="with: session">    
         <div class="titleblock">
             <label for="title">Title</label>
